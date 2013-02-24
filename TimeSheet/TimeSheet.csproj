@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD434DC1-47C3-48A7-92AB-E359FADB4217}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimeSheet</RootNamespace>
+    <AssemblyName>TimeSheet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MultipleTimeEntrie\MultipleTimeEntrie.ascx.cs">
+      <DependentUpon>MultipleTimeEntrie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MultipleTimeEntrie\MultipleTimeEntrie.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MultipleTimeEntrie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskCreation\TaskCreation.ascx.cs">
+      <DependentUpon>TaskCreation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskCreation\TaskCreation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskCreation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeEntrie\TimeEntrie.ascx.cs">
+      <DependentUpon>TimeEntrie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeEntrie\TimeEntrie.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeEntrie.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{ef37ed48-b392-4528-bb2a-85823e844033}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6a0eb9d-caf6-4020-8595-d80b36df3cf6}</SharePointProjectItemId>
+    </None>
+    <None Include="MultipleTimeEntrie\MultipleTimeEntrie.webpart" />
+    <None Include="MultipleTimeEntrie\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48d45744-51b5-4e73-bfec-563475321c97}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f8dbd4a0-d252-407b-a388-16be378c8cb8}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="TaskCreation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2d8bfc78-4248-4966-b88c-b5e5bb991514}</SharePointProjectItemId>
+    </None>
+    <None Include="TaskCreation\TaskCreation.webpart" />
+    <None Include="TimeEntrie\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{278b6253-7b40-45ab-b32d-8b73d8f3f55e}</SharePointProjectItemId>
+    </None>
+    <None Include="TimeEntrie\TimeEntrie.webpart" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\TimeSheet\jquery1.8.3.js" />
+    <Content Include="Layouts\TimeSheet\copy.gif" />
+    <Content Include="Layouts\TimeSheet\delete.gif" />
+    <Content Include="Layouts\TimeSheet\Stylesheet1.css" />
+    <Content Include="MultipleTimeEntrie\Elements.xml" />
+    <Content Include="MultipleTimeEntrie\MultipleTimeEntrie.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MultipleTimeEntrie.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Layouts\TimeSheet\SPOpenDialog.js" />
+    <Content Include="TaskCreation\Elements.xml" />
+    <Content Include="TaskCreation\TaskCreation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TaskCreation.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="TimeEntrie\Elements.xml" />
+    <Content Include="TimeEntrie\TimeEntrie.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TimeEntrie.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

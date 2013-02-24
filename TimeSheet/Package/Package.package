@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f8dbd4a0-d252-407b-a388-16be378c8cb8" solutionId="f8dbd4a0-d252-407b-a388-16be378c8cb8" resetWebServer="false" sharePointProductVersion="15.0" name="TimeSheet" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ef37ed48-b392-4528-bb2a-85823e844033" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="f6a0eb9d-caf6-4020-8595-d80b36df3cf6" />
+  </projectItems>
+</package>

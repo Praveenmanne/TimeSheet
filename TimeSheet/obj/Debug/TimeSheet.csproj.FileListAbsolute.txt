@@ -1,0 +1,5 @@
+C:\Praveen\TimeSheet\TimeSheet\bin\Debug\TimeSheet.dll
+C:\Praveen\TimeSheet\TimeSheet\bin\Debug\TimeSheet.pdb
+C:\Praveen\TimeSheet\TimeSheet\obj\Debug\TimeSheet.csprojResolveAssemblyReference.cache
+C:\Praveen\TimeSheet\TimeSheet\obj\Debug\TimeSheet.dll
+C:\Praveen\TimeSheet\TimeSheet\obj\Debug\TimeSheet.pdb

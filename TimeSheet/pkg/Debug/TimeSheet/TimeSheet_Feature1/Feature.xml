@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="794c421e-b03c-4df0-a569-1ec05f0bad38" Scope="Site" Title="TimeSheet Feature1">
+  <ElementManifests>
+    <ElementManifest Location="TaskCreation\Elements.xml" />
+    <ElementFile Location="TaskCreation\TaskCreation.webpart" />
+    <ElementManifest Location="TimeEntrie\Elements.xml" />
+    <ElementFile Location="TimeEntrie\TimeEntrie.webpart" />
+    <ElementManifest Location="MultipleTimeEntrie\Elements.xml" />
+    <ElementFile Location="MultipleTimeEntrie\MultipleTimeEntrie.webpart" />
+  </ElementManifests>
+</Feature>

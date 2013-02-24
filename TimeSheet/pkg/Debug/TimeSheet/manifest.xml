@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f8dbd4a0-d252-407b-a388-16be378c8cb8" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="TimeSheet.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="TimeSheet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0d0a701b33791f5f" Namespace="TimeSheet.TaskCreation" TypeName="*" />
+        <SafeControl Assembly="TimeSheet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0d0a701b33791f5f" Namespace="TimeSheet.TimeEntrie" TypeName="*" />
+        <SafeControl Assembly="TimeSheet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0d0a701b33791f5f" Namespace="TimeSheet.MultipleTimeEntrie" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\TimeSheet\jquery1.8.3.js" />
+    <TemplateFile Location="Layouts\TimeSheet\copy.gif" />
+    <TemplateFile Location="Layouts\TimeSheet\delete.gif" />
+    <TemplateFile Location="Layouts\TimeSheet\Stylesheet1.css" />
+    <TemplateFile Location="Layouts\TimeSheet\SPOpenDialog.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="TimeSheet_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>
